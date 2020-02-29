@@ -1,11 +1,8 @@
-spring:
-  application: api-gateway
-  cloud:
-    config:
-      username: user
-      password: e10adc3949ba59abbe56e057f20f883e
-      label: config-lable-test
-      uri: http://localhost:1115/
-
-server:
-  port: 1117
+zuul:
+  filter:
+    root: filter
+    interval: 5
+  routes:
+    hello-service:
+      path: /hello-service/**
+      serviceId: hello-service
