@@ -1,0 +1,8 @@
+zuul:
+  filter:
+    root: filter
+    interval: 5
+  routes:
+    hello-service:
+      path: /hello-service/**
+      serviceId: hello-service
