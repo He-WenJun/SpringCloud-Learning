@@ -4,5 +4,5 @@ zuul:
     interval: 5
   routes:
     hello-service:
-      path: /hello-Word/**
+      path: /hello-service/**
       serviceId: hello-service
